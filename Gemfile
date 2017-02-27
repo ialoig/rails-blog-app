@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 source 'http://rubygems.org'
+=======
+source 'https://rubygems.org'
+>>>>>>> 9b9fd301363ed686b009466bd9089a4a3fd8c2b7
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
