@@ -25,7 +25,15 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* Git commands:
+	- to create new branch
+		git chackout -b branch_name
+	- to check files to commit
+		git status
+	- to add files to commit
+		git add .
+	to commit
+		git commit -am "commit message"
 
 
 Please feel free to use a different markup language if you do not plan to run

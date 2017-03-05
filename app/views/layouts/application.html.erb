@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
-<<<<<<< HEAD
-=======
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
->>>>>>> 9b9fd301363ed686b009466bd9089a4a3fd8c2b7
+  	<title>Giovanni Lai | Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/application.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<script src="https://use.fontawesome.com/e0d3a09df5.js"></script>
+  	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<header id="main_navigation" class="clearfix">
+		<a href="#" class="name">Giovanni Blog</a>
+		<nav>
+			<a href="articles.html">Articles</a>
+			<a href="#">Projects</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<%= yield %>
+	
+	<footer id="main_footer">
+		<p class="copyright">&copy;2017 Giovanni Lai</p>
+		<nav>
+			<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		</nav>
+	</footer>
 
 </body>
 </html>

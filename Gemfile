@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 source 'http://rubygems.org'
-=======
-source 'https://rubygems.org'
->>>>>>> 9b9fd301363ed686b009466bd9089a4a3fd8c2b7
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -15,6 +11,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-script-source', '1.8.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 

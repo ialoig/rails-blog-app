@@ -1,0 +1,23 @@
+<div class="wrapper clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et iaculis elit. Etiam at vehicula nunc. Suspendisse tincidunt lacus quis lacus vehicula mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam at facilisis felis. Nam facilisis sagittis risus in facilisis. Integer ut neque malesuada, tempus tellus ac, convallis ex. Phasellus interdum ante sed eros pretium, non hendrerit eros gravida.
+		</p>
+	</div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff I have written</h2>
+		<hr>
+		<% @post.each do |post| %>
+			<h3><a href="#"><%= link_to post.title, post %></a></h3>
+			<p class="date"><%= post.created_at.strftime ("%A, %b, %d")%></p>
+		<% end %>
+	</div>
+	<div class="col-3 homepage_content">
+		<h2>Stuff I have built</h2>
+		<hr>
+		<h3><a href="#">Blog in Rails</a></h3>
+		<p class="date">Sunday, 19 February 2017</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et iaculis elit. Etiam at vehicula nunc. Suspendisse tincidunt lacus quis lacus vehicula mollis.</p>
+	</div>
+</div>
