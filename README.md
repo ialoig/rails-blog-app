@@ -27,13 +27,15 @@ Things you may want to cover:
 
 * Git commands:
 	- to create new branch
-		git chackout -b branch_name
+		> git checkout -b branch_name
 	- to check files to commit
-		git status
+		> git status
 	- to add files to commit
-		git add .
+		> git add .
 	to commit
-		git commit -am "commit message"
+		> git commit -am "commit message"
+	to upload local commit to remote server
+		> git push
 
 
 Please feel free to use a different markup language if you do not plan to run
