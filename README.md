@@ -27,25 +27,17 @@ Things you may want to cover:
 
 * Git commands:
 	- to create new branch
-<<<<<<< HEAD
 		> git checkout -b branch_name
-=======
-		> git chackout -b branch_name
->>>>>>> markdown_syntax_hightlighting
 	- to check files to commit
 		> git status
 	- to add files to commit
 		> git add .
 	to commit
 		> git commit -am "commit message"
-<<<<<<< HEAD
 	to upload local commit to remote server
 		> git push
-
-=======
 	to switch branch
 		> git checkout branch_name
->>>>>>> markdown_syntax_hightlighting
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
