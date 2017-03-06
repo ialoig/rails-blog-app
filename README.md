@@ -38,6 +38,10 @@ Things you may want to cover:
 		> git push
 	to switch branch
 		> git checkout branch_name
+	to update local branch from remote one
+		> git checkout master
+		> git branch --set-upstream-to=origin/master
+		> git pull 
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
