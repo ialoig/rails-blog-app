@@ -41,7 +41,11 @@ Things you may want to cover:
 	to update local branch from remote one
 		> git checkout master
 		> git branch --set-upstream-to=origin/master
-		> git pull 
+		> git pull
+	to merge branch with master
+		> git checkout master -> it switch on master branch
+		> git merge branch_name
+		> git push
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
