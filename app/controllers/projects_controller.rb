@@ -18,7 +18,22 @@ class ProjectsController < ApplicationController
 	end
 
 	def show
+	end
 
+	def edit
+	end
+
+	def update
+		if @project.update project_params
+			redirect_to @project, notice: "Project successfully updated!"
+		else
+			render "edit"
+		end
+	end
+
+	def destroy
+		@project.destroy project_params
+		redirect_to projects_path
 	end
 
 	private def find_project
@@ -26,6 +41,6 @@ class ProjectsController < ApplicationController
 	end
 
 	private def project_params
-		params.require(:project).permit(:title, :description, :link)
+		params.require(:project).permit(:title, :description, :link, :slug)
 	end
 end
