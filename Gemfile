@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'coffee-script-source', '1.8.0'
 gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
+gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
