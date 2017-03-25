@@ -32,15 +32,15 @@ class ProjectsController < ApplicationController
 	end
 
 	def destroy
-		@project.destroy project_params
+		@project.destroy
 		redirect_to projects_path
-	end
-
-	private def find_project
-		@project = Project.friendly.find(params[:id])
 	end
 
 	private def project_params
 		params.require(:project).permit(:title, :description, :link, :slug)
+	end
+
+	private def find_project
+		@project = Project.friendly.find(params[:id])
 	end
 end
