@@ -79,4 +79,12 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = {host: "https://frozen-ridge-85694.herokuapp.com/"}
   config.action_mailer.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :address => "smtp.sendgrid.net",
+    :port => "465",
+    :username => "apikey",
+    :password => "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",
+    :domain => "heroku.com",
+  }
+
 end
